@@ -5,7 +5,20 @@ package Personnages;
 public class Guerrier {
 
     private String name;
-    private String picture;
+    private String picture = "\n" +
+            "                           __.--|~|--.__                               ,,;/;\n" +
+            "                         /~     | |    ;~\\                          ,;;;/;;'\n" +
+            "                        /|      | |    ;~\\\\                      ,;;;;/;;;'\n" +
+            "                       |/|      \\_/   ;;;|\\                    ,;;;;/;;;;'\n" +
+            "                       |/ \\          ;;;/  )                 ,;;;;/;;;;;'\n" +
+            "                   ___ | ______     ;_____ |___....__      ,;;;;/;;;;;'\n" +
+            "             ___.-~ \\\\(| \\  \\.\\ \\__/ /./ /:|)~   ~   \\   ,;;;;/;;;;;'\n" +
+            "         /~~~    ~\\    |  ~-.     |   .-~: |//  _.-~~--,;;;;/;;;;;'\n" +
+            "        (.-~___     \\.'|    | /-.__.-\\|::::| //~     ,;;;;/;;;;;'\n" +
+            "        /      ~~--._ \\|   /          `\\:: |/      ,;;;;/;;;;;'\n" +
+            "     .-|             ~~|   |  /V\"\"\"\"V\\ |:  |     ,;;;;/;;;;;' \\\n" +
+            "    /                   \\  |  ~`^~~^'~ |  /    ,;;;;/;;;;;'    ;\n" ;
+
     private int hp = 5;
     private int attack = 5;
 
@@ -40,6 +53,16 @@ public class Guerrier {
 
     public int getHp() {
         return hp;
+    }
+
+    @Override
+    public String toString() {
+        return "Votre Guerrier s'appelle " +
+                name + "... ,\n" +
+                "ses point de vie sont de " + hp +
+                "pv, \n et son attaque de " + attack +
+                "points, \n Voici votre faciès : "+ picture+
+                "Vous êtes laid";
     }
 }
 
