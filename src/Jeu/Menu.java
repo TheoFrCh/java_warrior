@@ -50,15 +50,13 @@ public class Menu {
         }
 
         if (choice == 2) {
-            int diceRoll = De.diceRoll();
             int caseLoc = Plateau.whereAmI();
 
             while (caseLoc < 64) {
-
+                int diceRoll = De.diceRoll();
                 System.out.println("C'est parti alors ton personnage à un dé et il est obligé de le lancer pour avancer, bizarre non ? Le dé se lance... et affiche le nombre : " + diceRoll+ "\n" +
                         "Et vous vous situez sur la case "+caseLoc);
                 caseLoc = caseLoc + diceRoll;
-                diceRoll = 0;
 
             }
             if (caseLoc >= 64) {
