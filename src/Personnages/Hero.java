@@ -2,14 +2,16 @@ package Personnages;
 
 public class Hero {
     private String name;
+    private String picture;
     private int hp;
     private int attack;
     private int maxHealth;
     private int maxAttack;
 
 
-    public Hero(String name, int hp, int attack, int maxHealth, int maxAttack) {
+    public Hero(String name,String picture, int hp, int attack, int maxHealth, int maxAttack) {
         this.name = name;
+        this.picture= picture;
         this.hp = hp;
         this.attack = attack;
         this.maxHealth = maxHealth;
@@ -23,6 +25,10 @@ public class Hero {
     public void setName(String name) {
         this.name = name;
     }
+
+    public String getPicture(){return picture;}
+
+    public void setPicture(String picture) {this.picture = picture;}
 
     public int getHp() {
         return hp;
@@ -52,16 +58,14 @@ public class Hero {
         return maxAttack;
     }
 
-    public void setMaxAttack(int attackMax) {
+    public void setMaxAttack(int maxAttack) {
         this.maxAttack = maxAttack;
     }
 
     @Override
     public String toString() {
-        return "Hero{" +
-                "name='" + name + '\'' +
-                ", hp=" + hp +
-                ", attack=" + attack +
-                '}';
+        return  " Votre nom de héros est '" + name + '\'' +
+                ", Vous avez " + hp + " points de vie"+
+                ", et " + attack +" points d'attaque, voici votre faciès" + picture;
     }
 }

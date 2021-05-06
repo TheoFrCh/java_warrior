@@ -1,6 +1,7 @@
 package Jeu;
 
 import Personnages.Guerrier;
+import Personnages.Hero;
 import Personnages.Magicien;
 
 import java.util.Scanner;
@@ -20,7 +21,7 @@ public class Menu {
         if (choice == 1) {
             System.out.println("Vous êtes donc un guerrier choisissez votre nom : ");
             name = clavier.nextLine();
-            Guerrier joueur = new Guerrier(name);
+            Hero joueur = new Guerrier(name);
             System.out.println("Wow " + name + " c'est un... sacré nom... ");
             System.out.println("Voici tes stats " + name + ":" + joueur.toString());
             choice = 0;
@@ -29,7 +30,7 @@ public class Menu {
         if (choice == 2) {
             System.out.println("Vous êtes donc un magicien choisissez votre nom : ");
             name = clavier.nextLine();
-            Magicien joueur = new Magicien(name);
+            Hero joueur = new Magicien(name);
             System.out.println("Wow " + name + " c'est un... sacré nom... ");
             System.out.println("Voici tes stats " + name + ":" + joueur.toString());
             choice = 0;
