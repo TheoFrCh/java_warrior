@@ -19,4 +19,9 @@ public class Guerrier extends Hero {
                 "     .-|             ~~|   |  /V\"\"\"\"V\\ |:  |     ,;;;;/;;;;;' \\\n" +
                 "    /                   \\  |  ~`^~~^'~ |  /    ,;;;;/;;;;;'    ;\n" ,5, 5, 10, 10);
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

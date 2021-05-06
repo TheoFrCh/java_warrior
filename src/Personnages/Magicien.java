@@ -18,4 +18,9 @@ public class Magicien extends Hero {
                 "                 \\/  \\   ' /  \\/\n" +
                 "                  .'  '...' ' )\n", 3, 8, 6, 15);
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
