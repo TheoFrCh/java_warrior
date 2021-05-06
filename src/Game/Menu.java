@@ -1,8 +1,8 @@
 package Game;
 
-import Characters.Guerrier;
+import Characters.Warrior;
 import Characters.Hero;
-import Characters.Magicien;
+import Characters.Wizard;
 
 import java.util.Scanner;
 
@@ -10,28 +10,28 @@ public class Menu {
     public void choixPerso() {
         String choice;
         String name = "";
-        Hero joueur = null;
-        Scanner clavier = new Scanner(System.in);
+        Hero player = null;
+        Scanner keyboard = new Scanner(System.in);
         System.out.println("Bonjour, bienvenue dans Java warrior ! \n " +
                 "Quel type de personnage voulez vous créer, un Guerrier ?[war]\n " +
                 "Un Magicien ?[wiz]\n " +
                 "Tu désire peut-être quitter ce merveilleux jeu ??????????? Appuie sur [q] alors...");
-        choice = clavier.nextLine();
+        choice = keyboard.nextLine();
 
         if (choice.equals("war")) {
             System.out.println("Vous êtes donc un guerrier choisissez votre nom : ");
-            name = clavier.nextLine();
-            joueur = new Guerrier(name);
+            name = keyboard.nextLine();
+            player = new Warrior(name);
             System.out.println("Wow " + name + " c'est un... sacré nom... ");
-            System.out.println("Voici tes stats " + name + ":" + joueur.toString());
+            System.out.println("Voici tes stats " + name + ":" + player.toString());
             choice = "";
         }
         if (choice.equals("wiz")) {
             System.out.println("Vous êtes donc un magicien choisissez votre nom : ");
-            name = clavier.nextLine();
-            joueur = new Magicien(name);
+            name = keyboard.nextLine();
+            player = new Wizard(name);
             System.out.println("Wow " + name + " c'est un... sacré nom... ");
-            System.out.println("Voici tes stats " + name + ":" + joueur.toString());
+            System.out.println("Voici tes stats " + name + ":" + player.toString());
             choice = "";
         }
 
@@ -41,7 +41,7 @@ public class Menu {
         }
 
         System.out.println("Serait t'il enfin temps de commencer votre long(non) périple ? [y] or [n]");
-        choice = clavier.nextLine();
+        choice = keyboard.nextLine();
 
 
         if (choice.equals("n")) {
@@ -65,7 +65,7 @@ public class Menu {
                     "\"Votre périple commence ici ! Lancez votre dé pour commencer !";
             System.out.println(cmd);
             while (caseLoc < 64) {
-                choice = clavier.nextLine();
+                choice = keyboard.nextLine();
 
                 if (choice.equals("de")) {
                     int diceRoll = Dice.diceRoll();
@@ -78,7 +78,7 @@ public class Menu {
                 }
                 if (choice.equals("quit")) {
                     System.out.println("Vous êtes sur de vouloir quitter ? Rien ne sera sauvegardé ! [y] or [n]");
-                    choice = clavier.nextLine();
+                    choice = keyboard.nextLine();
                     if (choice.equals("y")) {
                         System.exit(0);
                     }
@@ -87,7 +87,7 @@ public class Menu {
                     }
                 }
                 if (choice.equals("stat")) {
-                    System.out.println("Vos stats : " + joueur.toString());
+                    System.out.println("Vos stats : " + player.toString());
                 }
 
             }
@@ -99,7 +99,7 @@ public class Menu {
                     " \\___\\___/|_| |_|\\__, |_|  \\__,_|\\__|\\__,_|_|\\__,_|\\__|_|\\___/|_| |_|___/\n" +
                     "                  __/ |                                                  \n" +
                     "                 |___/                                                   ");
-            clavier.close();
+            keyboard.close();
 
         }
     }

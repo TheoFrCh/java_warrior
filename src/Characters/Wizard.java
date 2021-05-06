@@ -1,8 +1,8 @@
 package Characters;
 
-public class Magicien extends Hero {
+public class Wizard extends Hero {
 
-    public Magicien(String name) {
+    public Wizard(String name) {
         super(name, " \n" +
                 "                          ____ \n" +
                 "                       .'* *.'\n" +

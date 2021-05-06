@@ -2,9 +2,9 @@ package Characters;
 
 
 
-public class Guerrier extends Hero {
+public class Warrior extends Hero {
 
-    public Guerrier(String name) {
+    public Warrior(String name) {
         super(name, "\n" +
                 "                           __.--|~|--.__                               ,,;/;\n" +
                 "                         /~     | |    ;~\\                          ,;;;/;;'\n" +
