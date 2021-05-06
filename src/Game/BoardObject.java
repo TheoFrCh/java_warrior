@@ -1,9 +1,9 @@
-package Jeu;
+package Game;
 
-public class PlateauObject {
+public class BoardObject {
     private int Case;
 
-    public PlateauObject(int Case) {
+    public BoardObject(int Case) {
         this.Case = Case;
     }
 

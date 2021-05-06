@@ -1,10 +1,10 @@
-package Objets;
+package Items;
 
-public class Arme {
+public class Weapons {
     private String name;
     private int force;
 
-    public Arme(String name, int force) {
+    public Weapons(String name, int force) {
         this.name = name;
         this.force = force;
     }

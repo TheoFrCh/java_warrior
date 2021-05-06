@@ -1,4 +1,4 @@
-package Personnages;
+package Characters;
 
 public class Hero {
     private String name;

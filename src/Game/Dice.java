@@ -1,6 +1,6 @@
-package Jeu;
+package Game;
 
-public class De {
+public class Dice {
     public static int diceRoll() {
         int dice = (int)(Math.random()*6) + 1;
         return dice;

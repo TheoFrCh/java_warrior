@@ -1,9 +1,10 @@
-package Personnages;
+package Characters;
 
 public class Magicien extends Hero {
 
     public Magicien(String name) {
-        super(name, "               ____ \n" +
+        super(name, " \n" +
+                "                          ____ \n" +
                 "                       .'* *.'\n" +
                 "                    __/_*_*(_\n" +
                 "                   / _______ \\\n" +

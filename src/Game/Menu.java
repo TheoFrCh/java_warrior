@@ -1,9 +1,8 @@
-package Jeu;
+package Game;
 
-import Objets.Arme;
-import Personnages.Guerrier;
-import Personnages.Hero;
-import Personnages.Magicien;
+import Characters.Guerrier;
+import Characters.Hero;
+import Characters.Magicien;
 
 import java.util.Scanner;
 
@@ -51,7 +50,7 @@ public class Menu {
         }
 
         if (choice.equals("y")) {
-            int caseLoc = Plateau.whereAmI();
+            int caseLoc = Board.whereAmI();
             choice = "";
             String cmd = "\"C'est parti !\n" +
                     "\n" +
@@ -69,7 +68,7 @@ public class Menu {
                 choice = clavier.nextLine();
 
                 if (choice.equals("de")) {
-                    int diceRoll = De.diceRoll();
+                    int diceRoll = Dice.diceRoll();
                     caseLoc = caseLoc + diceRoll;
                     System.out.println("Vous lancez le dé et faite un : [" + diceRoll + "] \n" +
                             "Vous vous situez désormais sur la case [" + caseLoc + "] du plateau");
