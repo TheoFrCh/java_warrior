@@ -9,6 +9,8 @@ import java.util.Scanner;
 public class Menu {
     public void choixPerso() {
         String choice;
+        Board myBoard = new Board();
+        int boardLocation=0;
         boolean startMenuTester = true;
         String name = "";
         Hero player = null;
@@ -60,7 +62,6 @@ public class Menu {
         }
 
         if (choice.equals("y")) {
-         //   int caseLoc = Board.whereAmI();
             choice = "";
             String cmd = "\"C'est parti !\n" +
                     "\n" +
@@ -74,12 +75,13 @@ public class Menu {
                     "\n" +
                     "\"Votre périple commence ici ! Lancez votre dé pour commencer !";
             System.out.println(cmd);
-           // while (caseLoc < 64) {
+
                 choice = keyboard.nextLine();
 
                 if (choice.equals("de")) {
                     int diceRoll = Dice.diceRoll();
-             //       caseLoc = caseLoc + diceRoll;
+                    boardLocation=boardLocation+diceRoll;
+                    Cell currentCell = myBoard.getCell(boardLocation);
                     System.out.println("Vous lancez le dé et faite un : [" + diceRoll + "] \n" +
                             "Vous vous situez désormais sur la case [] du plateau");
                 }
@@ -113,4 +115,4 @@ public class Menu {
 
         }
     }
-}
+

@@ -1,5 +1,7 @@
 package Game;
 
+import OnBoardElements.EmptyCell;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,8 +14,9 @@ public class Board {
     }
 
     public void init(){
-        cellList.add(new Cell(1));
-
+        for (int i=0;1<64; i++) {
+            cellList.add(new EmptyCell(i));
+        }
     }
 
     public Cell getCell(int index) {

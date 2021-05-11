@@ -1,4 +1,7 @@
 package OnBoardElements;
 
-public class Dragons {
+public class Dragons extends Enemies {
+    public Dragons() {
+        super("Dragon",8,7);
+    }
 }
