@@ -2,18 +2,23 @@ package OnBoardElements;
 
 import Game.Cell;
 
+//Attributes
 public class Enemies extends Cell {
+    private int cell;
     private String name;
     private int hp;
     private int attack;
 
 
+//Constructor
+
     public Enemies (String name, int health, int attack,int cell) {
+        super(cell);
         this.name = name;
         this.hp = health;
         this.attack = attack;
-        this.getCell()=cell;
     }
+//Getters and Setters
 
     public String getName() {
         return name;
@@ -39,6 +44,7 @@ public class Enemies extends Cell {
         this.attack = attack;
     }
 
+    //To string Method
 
     public String toString() {
         return

@@ -1,6 +1,5 @@
 package Game;
 
-import Characters.Hero;
 
 public abstract class Cell {
     private int cell;

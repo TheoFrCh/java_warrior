@@ -1,6 +1,10 @@
 package Characters;
 
+//Extending this class to the hero class
+
 public class Wizard extends Hero {
+
+    //Calling the constructors
 
     public Wizard(String name) {
         super(name, " \n" +
@@ -19,6 +23,8 @@ public class Wizard extends Hero {
                 "                 \\/  \\   ' /  \\/\n" +
                 "                  .'  '...' ' )\n", 3, 8, 6, 15);
     }
+
+    //To string Method
 
     @Override
     public String toString() {

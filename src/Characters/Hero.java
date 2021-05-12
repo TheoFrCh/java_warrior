@@ -1,6 +1,8 @@
 package Characters;
 
 public class Hero {
+
+    //Attributes
     private String name;
     private String picture;
     private int hp;
@@ -8,7 +10,7 @@ public class Hero {
     private int maxHealth;
     private int maxAttack;
 
-
+//Constructor
     public Hero(String name,String picture, int hp, int attack, int maxHealth, int maxAttack) {
         this.name = name;
         this.picture= picture;
@@ -17,7 +19,7 @@ public class Hero {
         this.maxHealth = maxHealth;
         this.maxAttack = maxAttack;
     }
-
+//Getters and Setters
     public String getName() {
         return name;
     }
@@ -62,6 +64,7 @@ public class Hero {
         this.maxAttack = maxAttack;
     }
 
+    //To string Method
     @Override
     public String toString() {
         return  " Votre nom de héros est '" + name + '\'' +

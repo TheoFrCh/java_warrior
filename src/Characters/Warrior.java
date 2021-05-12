@@ -1,10 +1,17 @@
 package Characters;
 
 
+//Extending this class to the hero class
 
 public class Warrior extends Hero {
 
+
+    //Calling the constructors
+
     public Warrior(String name) {
+
+        //Setting the constructor
+
         super(name, "\n" +
                 "                           __.--|~|--.__                               ,,;/;\n" +
                 "                         /~     | |    ;~\\                          ,;;;/;;'\n" +
@@ -19,6 +26,8 @@ public class Warrior extends Hero {
                 "     .-|             ~~|   |  /V\"\"\"\"V\\ |:  |     ,;;;;/;;;;;' \\\n" +
                 "    /                   \\  |  ~`^~~^'~ |  /    ,;;;;/;;;;;'    ;\n" ,5, 5, 10, 10);
     }
+
+    //To string Method
 
     @Override
     public String toString() {
