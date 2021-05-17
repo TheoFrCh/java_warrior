@@ -10,9 +10,13 @@ public class Enemies extends Cell {
     private int attack;
 
 
+<<<<<<< Updated upstream
 //Constructor
 
     public Enemies (String name, int health, int attack,int cell) {
+=======
+    public Enemies (String name, int health, int attack, int cell) {
+>>>>>>> Stashed changes
         super(cell);
         this.name = name;
         this.hp = health;
