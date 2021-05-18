@@ -24,10 +24,4 @@ public class Wizard extends Hero {
                 "                  .'  '...' ' )\n", 3, 8, 6, 15);
     }
 
-    //To string Method
-
-    @Override
-    public String toString() {
-        return super.toString();
-    }
 }

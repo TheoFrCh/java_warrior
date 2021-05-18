@@ -2,27 +2,22 @@ package OnBoardElements;
 
 import Game.Cell;
 
-//Attributes
-public class Enemies extends Cell {
+    //Attributes
+public abstract class Enemies extends Cell {
     private int cell;
     private String name;
     private int hp;
     private int attack;
 
-
-<<<<<<< Updated upstream
-//Constructor
-
-    public Enemies (String name, int health, int attack,int cell) {
-=======
+    //Constructor
     public Enemies (String name, int health, int attack, int cell) {
->>>>>>> Stashed changes
         super(cell);
         this.name = name;
         this.hp = health;
         this.attack = attack;
     }
-//Getters and Setters
+
+    //Getters and Setters
 
     public String getName() {
         return name;

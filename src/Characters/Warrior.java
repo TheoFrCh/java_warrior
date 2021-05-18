@@ -27,10 +27,4 @@ public class Warrior extends Hero {
                 "    /                   \\  |  ~`^~~^'~ |  /    ,;;;;/;;;;;'    ;\n" ,5, 5, 10, 10);
     }
 
-    //To string Method
-
-    @Override
-    public String toString() {
-        return super.toString();
-    }
 }

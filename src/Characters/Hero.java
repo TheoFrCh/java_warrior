@@ -1,6 +1,6 @@
 package Characters;
 
-public class Hero {
+public abstract class Hero {
 
     //Attributes
     private String name;

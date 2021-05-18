@@ -87,7 +87,18 @@ public class Menu {
                 if (choice.equals("de")) {
                     int diceRoll = Dice.diceRoll();
                     boardLocation = boardLocation + diceRoll;
-                    Cell currentCell = myBoard.getCell(boardLocation);
+                    try {Cell currentCell = myBoard.getCell(boardLocation);}
+                    catch (IndexOutOfBoundsException e) {
+                        System.out.print("                                 _         _       _   _                 \n" +
+                                "                                | |       | |     | | (_)                \n" +
+                                "  ___ ___  _ __   __ _ _ __ __ _| |_ _   _| | __ _| |_ _  ___  _ __  ___ \n" +
+                                " / __/ _ \\| '_ \\ / _` | '__/ _` | __| | | | |/ _` | __| |/ _ \\| '_ \\/ __|\n" +
+                                "| (_| (_) | | | | (_| | | | (_| | |_| |_| | | (_| | |_| | (_) | | | \\__ \\\n" +
+                                " \\___\\___/|_| |_|\\__, |_|  \\__,_|\\__|\\__,_|_|\\__,_|\\__|_|\\___/|_| |_|___/\n" +
+                                "                  __/ |                                                  \n" +
+                                "                 |___/                                                   ");
+                    System.exit(0);
+                    }
                     System.out.println("Vous lancez le dé et faite un : [" + diceRoll + "] \n" +
                             "Vous vous situez désormais sur la case [" + boardLocation + "] du plateau");
                     choice = "";
@@ -120,6 +131,7 @@ public class Menu {
                 "                  __/ |                                                  \n" +
                 "                 |___/                                                   ");
         keyboard.close();
+        System.exit(0);
 
     }
 }
