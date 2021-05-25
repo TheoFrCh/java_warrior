@@ -83,6 +83,7 @@ public class Menu {
 
 
             //all the condition with the commands
+
             while (boardLocation < 64) {
                 if (choice.equals("de")) {
                     int diceRoll = Dice.diceRoll();
