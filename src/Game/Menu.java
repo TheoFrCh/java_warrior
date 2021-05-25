@@ -104,6 +104,7 @@ public class Menu {
                             "Vous vous situez désormais sur la case [" + boardLocation + "] du plateau");
                     choice = "";
                 }
+                if ()
                 if (choice.equals("cmd")) {
                     System.out.println(cmd);
                 }
