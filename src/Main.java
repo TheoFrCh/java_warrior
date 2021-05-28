@@ -3,7 +3,11 @@ import Game.Cell;
 import Game.Menu;
 public class Main {
 
-    //Main class where the game is launched
+    /**
+     * @author TheoFrCH
+     * Main class where the game is launched
+     * @param  args argument
+     */
     public static void main(String[] args) {
 
         //Instantiate Menu class

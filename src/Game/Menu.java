@@ -3,7 +3,6 @@ package Game;
 import Characters.Warrior;
 import Characters.Hero;
 import Characters.Wizard;
-import OnBoardElements.Enemies;
 
 import java.util.Scanner;
 

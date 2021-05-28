@@ -1,7 +1,11 @@
 package Characters;
 
 public abstract class Hero {
-
+    /**
+     * Hero Class which is parent of the Warrior and Wizard classes
+     * It contains the attributes name (String) , picture (String) , hp (int) , attack (int) , maxHealth (int) ,
+     * maxAttack (int)
+     */
     //Attributes
     private String name;
     private String picture;

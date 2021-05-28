@@ -1,7 +1,9 @@
 package Characters;
 
-//Extending this class to the hero class
-
+/**
+ * Class which allows to create a new wizard heritage of Hero class
+ * @see Hero
+ */
 public class Wizard extends Hero {
 
     //Calling the constructors

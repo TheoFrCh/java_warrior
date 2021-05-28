@@ -3,6 +3,10 @@ package OnBoardElements;
 import Characters.Hero;
 import Game.Cell;
 
+/**
+ * Class which allows to create new enemies on the board it extends the Cell class
+ * @see Cell
+ */
 //Attributes
 public abstract class Enemies extends Cell {
     private int cell;
@@ -53,7 +57,10 @@ public abstract class Enemies extends Cell {
                         "     Points de vie : " + hp +
                         "     Force : " + attack;
     }
-
+    /**
+     * Interaction between player and mobs
+     * @param player takes the parameter player
+     */
     public void interaction(Hero player) {
 int currentHp= player.getHp();
 int enemyHp= getHealth();

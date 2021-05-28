@@ -1,8 +1,10 @@
 package Characters;
 
 
-//Extending this class to the hero class
-
+/**
+ * Class which allows to create a new warrior heritage of Hero class
+ * @see Hero
+ */
 public class Warrior extends Hero {
 
 

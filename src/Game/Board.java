@@ -19,7 +19,10 @@ public class Board {
         cellList = new ArrayList<>();
         init();
     }
-    //Adding an init function to the board which will create the 64 emptyCell to the board when used
+
+    /**
+     * Init function to the board which will create the 64 Cell empty or not to the board when used
+     */
 
     public void init() {
         for (int i = 0; i < 64; i++) {
