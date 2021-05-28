@@ -3,6 +3,7 @@ package Game;
 import Characters.Warrior;
 import Characters.Hero;
 import Characters.Wizard;
+import OnBoardElements.Enemies;
 
 import java.util.Scanner;
 
@@ -74,11 +75,9 @@ public class Menu {
                     "\"[cmd] Pour afficher ce menu de commandes\n" +
                     "\"[stat] Pour voir le Status de ton personnage\n" +
                     "\"[quit] Pour quitter la partie\n" +
-                    "\"[de] Pour lancer le dé\n" +
-                    "\"[f] Pour lancer un combat\n" +
-                    "\"[run] Pour tenter de fuir\n";
+                    "\"[de] Pour lancer le dé\n";
             //show the commands
-            System.out.println("Votre long(non) périple commence voici, les commandes qui vous permettrons de venir à bout du plateau maudit ! : ");
+            System.out.println("Votre voyage commence ici, voici les commandes qui vous permettrons de venir à bout du plateau maudit ! : ");
             System.out.println(cmd);
 
 
@@ -88,7 +87,14 @@ public class Menu {
                 if (choice.equals("de")) {
                     int diceRoll = Dice.diceRoll();
                     boardLocation = boardLocation + diceRoll;
-                    try {Cell currentCell = myBoard.getCell(boardLocation);}
+                    System.out.println("Vous lancez le dé et faite un : [" + diceRoll + "] \n" +
+                            "Vous vous situez désormais sur la case [" + boardLocation+"] du plateau");
+                    choice = "";
+                    try {
+                        Cell currentCell = myBoard.getCell(boardLocation);
+                        currentCell.interaction(player);
+                    }
+
                     catch (IndexOutOfBoundsException e) {
                         System.out.print("                                 _         _       _   _                 \n" +
                                 "                                | |       | |     | | (_)                \n" +
@@ -100,11 +106,7 @@ public class Menu {
                                 "                 |___/                                                   ");
                     System.exit(0);
                     }
-                    System.out.println("Vous lancez le dé et faite un : [" + diceRoll + "] \n" +
-                            "Vous vous situez désormais sur la case [" + boardLocation + "] du plateau");
-                    choice = "";
                 }
-                if ()
                 if (choice.equals("cmd")) {
                     System.out.println(cmd);
                 }

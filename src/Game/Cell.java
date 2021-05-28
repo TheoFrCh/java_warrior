@@ -1,6 +1,8 @@
 package Game;
 
 
+import Characters.Hero;
+
 public abstract class Cell {
     private int cell;
 
@@ -16,6 +18,7 @@ public abstract class Cell {
         this.cell = cell;
     }
 
+    public abstract void interaction(Hero player);
 
     public String toString() {
         return "Vous êtes sur la case" + cell;

@@ -28,9 +28,13 @@ public abstract class Hero {
         this.name = name;
     }
 
-    public String getPicture(){return picture;}
+    public String getPicture(){
+        return picture;
+    }
 
-    public void setPicture(String picture) {this.picture = picture;}
+    public void setPicture(String picture) {
+        this.picture = picture;
+    }
 
     public int getHp() {
         return hp;
